@@ -10,6 +10,7 @@ class LoginPage(BasePage):
         login_link.click()
 
     def should_be_login_page(self):
+        self.go_to_login_page()
         self.should_be_login_url()
         self.should_be_login_form()
         self.should_be_register_form()
